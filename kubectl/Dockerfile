@@ -4,6 +4,7 @@ WORKDIR /
 RUN apt update && apt install -y ca-certificates \
     curl
 
+## TODO make VERSION automatically update with dependabot
 ENV VERSION="1.35.0"
 RUN curl -sfSOL "https://dl.k8s.io/release/v$VERSION/bin/linux/amd64/kubectl"
 
