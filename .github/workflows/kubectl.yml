@@ -4,11 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - /kubectl/**
+      - kubectl/**
   pull_request:
     branches: [main]
     paths:
-      - /kubectl/**
+      - kubectl/**
 jobs:
   docker-build:
     name: Build and Push Docker Image
